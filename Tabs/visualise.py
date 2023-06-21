@@ -10,15 +10,15 @@ from web_functions import train_model
 def app(df, x, y):
 
     warnings.filterwarnings('ignore')
-    st.set_option('deprecation.showPyplotGlobal', False)
+    # st.set_option('deprecation.showPyplotGlobal', False)
 
-    st.title("Visualisasi Prediksi Batu Ginjal")
+    # st.title("Visualisasi Prediksi Batu Ginjal")
 
-    if st.checkbox("Plot Confusion Matrix"):
-        model, score = train_model(x,y)
-        plt.figure(figsize=(10,6))
-        plot_confusion_matrix(model, x, y, values_format='d')
-        st.pyplot()
+    # if st.checkbox("Plot Confusion Matrix"):
+    #     model, score = train_model(x,y)
+    #     plt.figure(figsize=(10,6))
+    #     plot_confusion_matrix(model, x, y, values_format='d')
+    #     st.pyplot()
 
     if st.checkbox("Plot Decision Tree"):
         model, score = train_model(x,y)
