@@ -3,12 +3,13 @@
 import streamlit as st
 from web_functions import load_data
 
-from Tabs import home, predict, visualise
+from Tabs import home, predict, visualise, information
 
 Tabs = {
     "Home" : home,
     "Prediction" : predict,
-    "Visualisation" : visualise
+    "Visualisation" : visualise,
+    "Information" : information
 }
 
 #membuat sidebar
