@@ -5,56 +5,58 @@ def app(df, x, y):
     
     st.title("Halaman Prediksi")
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4= st.columns(4)
 
     with col1:
-        bp = st.text_input('Input Nilai bp')
+        bp = st.text_input('Tekanan darah')
     with col1:
-        sg = st.text_input('Input Nilai sg')
+        sg = st.text_input('Berat jenis')
     with col1:
-        al = st.text_input('Input Nilai al')
+        al = st.text_input('Albumin')
     with col1:
-        su = st.text_input('Input Nilai su')
+        su = st.text_input('Gula')
     with col1:
-        rbc = st.text_input('Input Nilai rbc')
+        rbc = st.text_input('Sel darah merah')
     with col1:
-        pc = st.text_input('Input Nilai pc')
-    with col1:
-        pcc = st.text_input('Input Nilai pcc')
-    with col1:
-        ba = st.text_input('Input Nilai ba')
+        pc = st.text_input('Sel darah putih')
 
+    with col2:
+        pcc = st.text_input('Gumpalan sel darah putih')
+    with col2:
+        ba = st.text_input('Bakteri')
     with col2:    
-        bgr = st.text_input('Input Nilai bgr')
+        bgr = st.text_input('Glukosa darah ack')
     with col2:    
-        bu = st.text_input('Input Nilai bu')
+        bu = st.text_input('Ureum darah')
     with col2:    
-        sc = st.text_input('Input Nilai sc')
+        sc = st.text_input('Kreatin serum')
     with col2:    
-        sod = st.text_input('Input Nilai sod')
-    with col2:    
-        pot = st.text_input('Input Nilai pot')
-    with col2:    
-        hemo = st.text_input('Input Nilai hemo')
-    with col2:    
-        pcv = st.text_input('Input Nilai pcv')
-    with col2:    
-        wc = st.text_input('Input Nilai wc')
+        sod = st.text_input('Natrium')
 
     with col3:    
-        rc = st.text_input('Input Nilai rc')
+        pot = st.text_input('Kalium')
     with col3:    
-        htn = st.text_input('Input Nilai htn')
+        hemo = st.text_input('Hemoglobin')
     with col3:    
-        dm = st.text_input('Input Nilai dm')
+        pcv = st.text_input('volume sel terkemas')
     with col3:    
-        cad = st.text_input('Input Nilai cad')
+        wc = st.text_input('Jumlah sel darah putihc')
     with col3:    
-        appet = st.text_input('Input Nilai appet')
+        rc = st.text_input('Jumlah sel darah merah')
     with col3:    
-        pe = st.text_input('Input Nilai pe')
-    with col3:    
-        ane = st.text_input('Input Nilai ane')
+        htn = st.text_input('Hipertensi')
+
+
+    with col4:    
+        dm = st.text_input('Diabetes mellitus')
+    with col4:    
+        cad = st.text_input('Penyakit arteri koroner')
+    with col4:    
+        appet = st.text_input('Nafsu makan')
+    with col4:    
+        pe = st.text_input('Edema pedal')
+    with col4:    
+        ane = st.text_input('Anemia')
 
     features = [bp,sg,al,su,rbc,pc,pcc,ba,bgr,bu,sc,sod,pot,hemo,pcv,wc,rc,htn,dm,cad,appet,pe,ane]
 
