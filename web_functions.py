@@ -6,7 +6,7 @@ import streamlit as st
 
 # bikin fungsi-fungsi nya
 # fungsi untuk load data
-@st.cache()
+@st.cache_data()
 def load_data():
     
     #load dataset
@@ -18,7 +18,7 @@ def load_data():
     return df, x, y
 
 # fungsi pembuatan model decision tree
-@st.cache()
+@st.cache_data()
 def train_model(x,y):
     model = DecisionTreeClassifier(
             ccp_alpha=0.0, class_weight=None, criterion='entropy',
