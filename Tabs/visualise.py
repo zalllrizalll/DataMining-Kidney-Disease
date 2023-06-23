@@ -12,7 +12,7 @@ def app(df, x, y):
     warnings.filterwarnings('ignore')
     # st.set_option('deprecation.showPyplotGlobal', False)
 
-    # st.title("Visualisasi Prediksi Batu Ginjal")
+    st.title("Visualisasi Prediksi Batu Ginjal")
 
     # if st.checkbox("Plot Confusion Matrix"):
     #     model, score = train_model(x,y)
